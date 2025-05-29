@@ -1,0 +1,46 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+      <TargetFramework>net9.0</TargetFramework>
+      <IsPackable>false</IsPackable>
+      <PreserveCompilationContext>true</PreserveCompilationContext>
+  </PropertyGroup>
+
+  <ItemGroup>
+      <PackageReference Include="AspNetCoreRateLimit" Version="5.0.0" />
+      <PackageReference Include="Azure.Storage.Blobs" Version="12.20.0" />
+      <PackageReference Include="coverlet.collector" Version="6.0.0" />
+      <PackageReference Include="Docker.DotNet" Version="3.125.15" />
+      <PackageReference Include="FluentAssertions" Version="6.12.0" />
+      <PackageReference Include="IdentityServer4" Version="4.1.2" />
+      <PackageReference Include="Microsoft.AspNetCore.Authentication.Facebook" Version="9.0.2" />
+      <PackageReference Include="Microsoft.AspNetCore.DataProtection" Version="9.0.2" />
+      <PackageReference Include="Microsoft.AspNetCore.Mvc.Testing" Version="9.0.0" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="9.0.0" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="9.0.0" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="9.0.0" />
+      <PackageReference Include="Microsoft.Extensions.Configuration" Version="9.0.2" />
+       <PackageReference Include="Microsoft.Extensions.Options" Version="9.0.4" />
+      <PackageReference Include="Microsoft.Net.Http.Headers" Version="9.0.1" />
+      <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.8.0" />
+      <PackageReference Include="Moq" Version="4.20.70" />
+      <PackageReference Include="Npgsql" Version="9.0.0" />
+      <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="9.0.0" />
+      <PackageReference Include="Respawn" Version="6.2.1" />
+      <PackageReference Include="Scrutor" Version="6.0.1" />
+      <PackageReference Include="System.Net.Http.Json" Version="9.0.0" />
+      <PackageReference Include="Minio" Version="6.0.4" />
+      <PackageReference Include="xunit" Version="2.8.1" />
+      <PackageReference Include="xunit.runner.visualstudio" Version="2.8.1" />
+      
+  </ItemGroup>
+
+  <ItemGroup>
+      <Using Include="Xunit" />
+  </ItemGroup>
+
+  <ItemGroup>
+      <ProjectReference Include="..\..\src\ecommerce.csproj" />
+  </ItemGroup>
+
+</Project>

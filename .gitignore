@@ -1,0 +1,89 @@
+# .gitignore for .NET Projects
+# Production-ready, comprehensive, covering Visual Studio, VS Code, Rider, build outputs, user settings, and OS files.
+
+# --- Visual Studio ---
+.vs/                        
+*.suo                       
+*.user                      
+*.userosscache              
+*.sln.docstates            
+
+# --- Build Results ---
+[Bb]in/                     
+[Oo]bj/                     
+out/                        
+
+# --- .NET Core / .NET 5+ ---
+project.lock.json           
+project.fragment.lock.json  
+artifacts/                  
+
+# --- NuGet ---
+*.nupkg                     
+packages/                   
+.nuget/                     
+*.nupkg.metadata            
+project.lock.json           
+
+# --- Dotnet Local Tools ---
+.dotnet_tools/              
+
+# --- Rider ---
+.idea/                      
+*.sln.iml                   
+
+# --- Visual Studio Code ---
+.vscode/                    
+.history/                   
+
+# --- User Secrets ---
+# https://docs.microsoft.com/aspnet/core/security/app-secrets
+secrets.json                
+
+# --- Azure Pipelines ---
+*.cache/                   
+
+# --- Published output ---
+*.publishsettings          
+*/publish/                 
+
+# --- Database files ---
+*.mdf
+*.ldf
+
+# --- OS Generated ---
+.DS_Store
+Thumbs.db
+
+# --- Logs ---
+*.log
+
+# --- Test Results ---
+TestResults/
+*.trx
+
+# --- Coverage ---
+coverage*/
+*.coverage
+*.coveragexml
+
+# --- JetBrains Rider IDE ---
+.idea/
+*.DotSettings.user
+
+# --- Xamarin ---
+*.apk
+*.ap_ 
+*.aab
+*.dex
+*.jar
+*.keystore
+*.xcodeproj
+
+# --- AWS Toolkit for Visual Studio ---
+.aws/
+
+# --- Mac-specific ---
+*.iml
+
+# --- End of .gitignore ---
